@@ -15,7 +15,7 @@ class App extends React.Component {
       //add components
       <> 
       <Header />
-      <Main />
+      {/* <Main /> */}
       <footer>Author Susan Hargus</footer>
       </>
     )
