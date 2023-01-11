@@ -1,26 +1,19 @@
 import React from 'react';
+// import Header from './Header.js';
+import Main from './Main';
 import './App.css';
-import Header from './Header.js';
-import Main from './Main.js';
-// import Footer from './Footer.js';
-
 
 class App extends React.Component {
-     
 
-
-
-
-  render(){
+  render() {
     return (
-      //add components
-      <> 
-      <Header />
-      <Main />
-      <footer>Susan Hargus</footer>
+      <>
+        {/* <Header/> */}
+        <Main />
+       {/* <Footer/> */}
       </>
-    )
+    );
   }
+}
 
-} 
-export default App; 
+export default App;
