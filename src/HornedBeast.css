@@ -1,6 +1,7 @@
 img {
   height: 250px;
   width: 250px;
+  border: 7px solid rgb(38, 69, 244);
 }
 
 
@@ -10,9 +11,6 @@ body {
   background-image: linear-gradient(rgb(104, 129, 182), white);
 }
 
-html {
-  height: 100%;
-}
 
 body {
   height: 100%;
@@ -24,6 +22,7 @@ body {
 
 
 
-h1 {
-  font-size: 150px;
+h2 {
+  font-size: 250px;
+  text-align: center;
 }

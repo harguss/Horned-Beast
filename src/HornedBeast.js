@@ -43,8 +43,8 @@ class HornedBeast extends React.Component {
         <p onClick={this.handleLikes}>Click to like this Beast</p>
 
        
-        <Button onClick={this.hbNeeded} className="buttonMargin"></Button>
-        <Button variant="success"></Button>
+        <Button variant="primary" onClick={this.likes} className="buttonMargin">LIKE it!</Button>
+       
         </article>
       </>
     )
