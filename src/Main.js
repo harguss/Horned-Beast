@@ -1,6 +1,7 @@
 import React from "react";
 import HornedBeast from './HornedBeast';
 import data from './data.json';
+import './Main.css';
 
 
 
@@ -36,7 +37,7 @@ class Main extends React.Component {
           title={"Unicorn Head"}
           image_url={"https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg"}
           description={"Someone wearing a very silly unicorn head mask"} /> */}
-              {hornedbeast}
+        {hornedbeast}
 
       </>
 
