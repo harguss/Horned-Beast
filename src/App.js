@@ -1,16 +1,19 @@
-// import React from "react";
+import React from 'react';
+// import Header from './Header.js';
+import Main from './Main';
+import './App.css';
 
+class App extends React.Component {
 
-// class HornedBeast extends React.Component {
-//   render() {
-//     console.log("props?", this.props);
-//     return (
-//       <>
-//       <article>
-//       <h3>{this.props.pie}</h3>
-//       <p>Your favorite horned beast</p>
-//       </article>
-//       </>
-//     )
-//   }
-// }
+  render() {
+    return (
+      <>
+        {/* <Header/> */}
+        <Main />
+       {/* <Footer/> */}
+      </>
+    );
+  }
+}
+
+export default App;

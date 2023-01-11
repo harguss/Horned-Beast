@@ -1,6 +1,6 @@
 import React from "react";
 import HornedBeast from './HornedBeast';
-import data from './src/data.json';
+import data from './data.json';
  
  
  
@@ -12,10 +12,10 @@ class Main extends React.Component {
 
   data.forEach((newHornedbeast) =>{
     hornedbeast.push(
-    <Hornedbeast  
-    hornedbeastName={new.Hornedbeast.title}
-    hornedbeastImage={new.Hornedbeast.image_url}
-    hornedbeastDescription={new.Hornedbeast.description}
+    <HornedBeast  
+    hornedbeastName={data.title}
+    hornedbeastImage={data.image_url}
+    hornedbeastDescription={data.description}
     />);
   });
   console.log('data component', hornedbeast)
