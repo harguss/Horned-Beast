@@ -10,18 +10,19 @@ class Main extends React.Component {
 
     let hornedbeast = [];
 
-    data.forEach((newHornedbeast) => {
+    data.forEach((newHornedbeast, index) => {
       hornedbeast.push(
         <HornedBeast
-          hornedbeastName={data.title}
-          hornedbeastImage={data.image_url}
-          hornedbeastDescription={data.description}
+          title={newHornedbeast.title}
+          image_url={newHornedbeast.image_url}
+          description={newHornedbeast.description}
+          key={index}
         />);
     });
     console.log('data component', hornedbeast)
     return (
       <>
-        <HornedBeast
+        {/* <HornedBeast
           title={"UniWhal"}
           image_url={"http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"}
           description={"A unicorn and a narwhal nuzzling their horns"}
@@ -34,8 +35,8 @@ class Main extends React.Component {
         <HornedBeast
           title={"Unicorn Head"}
           image_url={"https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg"}
-          description={"Someone wearing a very silly unicorn head mask"} />
-
+          description={"Someone wearing a very silly unicorn head mask"} /> */}
+              {hornedbeast}
 
       </>
 
