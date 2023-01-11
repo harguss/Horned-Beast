@@ -4,7 +4,7 @@
     render() {
       return (
         <div>
-          
+          <Footer>Susan Hargus</Footer>
         </div>
       );
     }
