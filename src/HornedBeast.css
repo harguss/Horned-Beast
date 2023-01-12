@@ -1,23 +1,11 @@
 body {
   color: rgb(37, 37, 144);
   background-image: linear-gradient(rgb(104, 129, 182), white);
-}
-
-
-body {
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-h1 {
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 60px;
-  color: rgb(37, 37, 144);
-}
-
 
 h2 {
   text-align: center;
@@ -29,6 +17,7 @@ article {
   border: 2px solid rgb(192, 200, 244);
   border-radius: 6%;
   padding: 1vw;
+  margin-top: 3vw;
   margin-bottom: 1vw;
   width: 25%;
   font-family: 'Orbitron', sans-serif;
@@ -41,6 +30,7 @@ article img {
   height: 250px;
   border: 13px solid rgb(192, 200, 244);
   border-radius: 6%;
+  
 }
 
 article p:last-of-type {
@@ -52,3 +42,4 @@ article-button-varient {
   display: flex;
   justify-content: center;
 }
+
