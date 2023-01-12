@@ -1,8 +1,8 @@
 # Horned Beasts Lab
 
-Number and name of feature: ________________________________
+Number and name of feature: __horned beast lab day 2______________________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: _6 hours____
 
 Start time: _____
 
