@@ -1,5 +1,4 @@
 body {
-  font-family: 'Orbitron', sans-serif;
   color: rgb(37, 37, 144);
   background-image: linear-gradient(rgb(104, 129, 182), white);
 }
@@ -13,11 +12,15 @@ body {
 }
 
 h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
   font-size: 60px;
+  color: rgb(37, 37, 144);
 }
 
 
 h2 {
+  text-align: center;
   font-size: 20px;
 
 }
@@ -28,16 +31,24 @@ article {
   padding: 1vw;
   margin-bottom: 1vw;
   width: 25%;
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(37, 37, 144);
+  background-image: linear-gradient(rgb(104, 129, 182), white);
 }
 
 article img {
   width: 100%;
   height: 250px;
-  border: 20px solid rgb(192, 200, 244);
+  border: 13px solid rgb(192, 200, 244);
   border-radius: 6%;
 }
 
 article p:last-of-type {
   padding-left: 1rem;
   cursor: pointer;
+}
+article-button-varient {
+  width: 5px;
+  display: flex;
+  justify-content: center;
 }
