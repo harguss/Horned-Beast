@@ -21,8 +21,10 @@ class Main extends React.Component {
         />);
     });
     console.log('data component', hornedbeast)
+      
     return (
       <>
+      < main >
         {/* <HornedBeast
           title={"UniWhal"}
           image_url={"http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"}
@@ -38,6 +40,7 @@ class Main extends React.Component {
           image_url={"https://www.dhresource.com/0x0s/f2-albu-g5-M00-1A-11-rBVaI1hsIIiALxKzAAIHjSU3VkE490.jpg/wholesale-halloween-costume-prop-unicorn.jpg"}
           description={"Someone wearing a very silly unicorn head mask"} /> */}
         {hornedbeast}
+      </main>
 
       </>
 
@@ -46,5 +49,6 @@ class Main extends React.Component {
     )
   }
 }
+
 export default Main
 
