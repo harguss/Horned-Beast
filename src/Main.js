@@ -2,12 +2,25 @@ import React from "react";
 import HornedBeast from './HornedBeast';
 import data from './data.json';
 import './Main.css';
-import { Container } from "react-bootstrap";
+import { Grid, Row, Col } from 'react-bootstrap';
+
 
 
 
 
 class Main extends React.Component {
+
+
+
+
+
+
+
+
+
+
+
+
   render() {
     console.log('data? :', data);
 
@@ -26,17 +39,22 @@ class Main extends React.Component {
       
     return (
       <>
-      <Container>
-      < main >
+      {/* <Container> */}
+        <Row xs={2} sm={3} md={4} lg={5}>
+      {/* < main > */}
         
         {hornedbeast}
-      </main>
-      </Container>
+
+      {/* </main> */}
+      </Row>
+      {/* </Container> */}
       </>
+
+
 
     )
   }
 }
 
-export default Main
+export default Main;
 
