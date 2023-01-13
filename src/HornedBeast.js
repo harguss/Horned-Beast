@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 
 
 class HornedBeast extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -15,12 +16,18 @@ class HornedBeast extends React.Component {
 
     }
   }
+
+
   handleLikes = () => {
     this.setState({
       likes: this.state.likes + 1,
     })
   }
 
+
+
+
+  
   render() {
     console.log('props?', this.props);
     return (

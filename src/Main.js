@@ -2,7 +2,7 @@ import React from "react";
 import HornedBeast from './HornedBeast';
 import data from './data.json';
 import './Main.css';
-import { Grid, Row, Col } from 'react-bootstrap';
+// import { Grid, Row, Col } from 'react-bootstrap';
 
 
 
@@ -40,13 +40,13 @@ class Main extends React.Component {
     return (
       <>
       {/* <Container> */}
-        <Row xs={2} sm={3} md={4} lg={5}>
+        {/* <Row xs={2} sm={3} md={4} lg={5}> */}
       {/* < main > */}
         
         {hornedbeast}
 
       {/* </main> */}
-      </Row>
+      {/* </Row> */}
       {/* </Container> */}
       </>
 
