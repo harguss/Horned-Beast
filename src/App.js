@@ -1,21 +1,21 @@
 import React from 'react';
 import Header from './Header.js';
-import Main from './Main';
+// import Main from './Main';
 import './App.css';
-import './Footer.js';
-import Container from 'react-bootstrap/Container';
+// import './Footer.js';
+// import Container from 'react-bootstrap/Container';
 
 class App extends React.Component {
 
   render() {
     return (
       <>
-      
-      <Container >
-        <Header/>
-        <Main/>
+    
+      {/* <Container > */}
+        <Header />
+        {/* <Main/> */}
         {/* <Footer/> */}
-      </Container>
+      {/* </Container> */}
       </>
     );
   }
