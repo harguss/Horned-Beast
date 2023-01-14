@@ -13,7 +13,7 @@ h2 {
 
 }
 
-article {
+Card.Body {
   border: 2px solid rgb(192, 200, 244);
   border-radius: 6%;
   padding: 1vw;
@@ -21,9 +21,9 @@ article {
   margin-bottom: 1vw;
   width: 25%;
   font-family: 'Orbitron', sans-serif;
-  color: rgb(37, 37, 144);
-  background-image: linear-gradient(rgb(104, 129, 182), white);
-}
+  /* color: rgb(37, 37, 144); */
+  /* background-image: linear-gradient(rgb(104, 129, 182), white); */
+} 
 
 article img {
   width: 100%;
