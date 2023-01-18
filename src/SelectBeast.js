@@ -12,7 +12,7 @@ class SelectBeast extends React.Component {
       <>
        <Modal show={this.state.showModal} onHide={this.handleClose}>
        <Modal.Header closeButton>
-         <Modal.Title>{this.state.selectBeast}</Modal.Title>
+         <Modal.Title>{this.state.hornedBeast.title}</Modal.Title>
        </Modal.Header>
       <Modal.Body></Modal.Body>
      </Modal>
