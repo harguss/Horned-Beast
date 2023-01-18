@@ -27,11 +27,15 @@ class HornedBeast extends React.Component {
 
 
 helpHandleOnShow = () => {
-  this.props.handleOnShow(this.props.hornedBeast);
+  let beastData = {
+    title: this.props.title,
+    image: this.props.image_url,
+    description: this.props.description
+  }
+  this.props.handleOnShow(beastData);
 }
   
   render() {
-    console.log('props?', this.props);
     return (
       <>
         <article>

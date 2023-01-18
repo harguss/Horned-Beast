@@ -6,10 +6,16 @@ import { Row } from 'react-bootstrap';
 
 class Main extends React.Component {
 
+  handleShow = (beastData) => {
+    console.log(beastData)
+   this.props.handleOnShow(beastData);
+  }
+
   render() {
     // console.log('data? :', data);
 
-    console.log('props', this.props);
+   
+    
 
     return (
       <>
@@ -21,7 +27,7 @@ class Main extends React.Component {
               image_url={newHornedbeast.image_url}
               description={newHornedbeast.description}
               key={index}
-              handleOnShow={this.props.handleOnShow}
+              handleOnShow={this.handleShow}
               />
     ))}
           </Row>

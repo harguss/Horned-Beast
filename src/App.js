@@ -14,16 +14,29 @@ class App extends React.Component {
      super(props);
      this.state ={
        showModal: false,
-       selectHornedBeast: '',
+       selectHornedBeast: {
+        title: '',
+        image: '',
+        description: ''
+       },
 
     }
   }
   // helper functions
-handleOnShow = (hornedBeast) => {
+handleOnShow = (beastData) => {
+  console.log(beastData);
   this.setState({
     showModal:true,
-    selectHornedBeast: hornedBeast
+    selectHornedBeast: beastData
   });
+
+}
+
+handleClose = () => {
+  this.setState({
+    showModal:false,
+  })
+ 
 }
   render() {
     return (
@@ -38,9 +51,13 @@ handleOnShow = (hornedBeast) => {
         {/* <SelectedBeast /> */}
       </Container>
       <Modal show={this.state.showModal} onHide={this.handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>{this.state.hornedBeast}</Modal.Title>
+        <Modal.Header closeButton >
+          <Modal.Title>{this.state.selectHornedBeast.title}</Modal.Title>
         </Modal.Header>
+        <Modal.Body>
+          <p>{this.state.selectHornedBeast.description}</p>
+          <image scr={this.state.selectHornedBeast.image_url}/>
+        </Modal.Body>
       </Modal>
       </>
     );
