@@ -43,3 +43,14 @@ article-button-varient {
   justify-content: center;
 }
 
+article {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+} 
+.modal-body img {
+  width: 100%;
+} 
+
+
+
