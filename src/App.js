@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import data from './data.json';
 import './SelectBeast'
 import Modal from 'react-bootstrap/Modal';
+import Image from 'react-bootstrap/Image'
 // import Button from 'react-bootstrap/Button';
 
 class App extends React.Component {
@@ -56,7 +57,7 @@ handleClose = () => {
         </Modal.Header>
         <Modal.Body>
           <p>{this.state.selectHornedBeast.description}</p>
-          <image scr={this.state.selectHornedBeast.image_url}/>
+          <Image src={this.state.selectHornedBeast.image}/>
         </Modal.Body>
       </Modal>
       </>
