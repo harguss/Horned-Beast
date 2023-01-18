@@ -26,7 +26,9 @@ class HornedBeast extends React.Component {
 
 
 
-
+helpHandleOnShow = () => {
+  this.props.handleOnShow(this.props.hornedBeast);
+}
   
   render() {
     console.log('props?', this.props);
@@ -36,7 +38,7 @@ class HornedBeast extends React.Component {
         <Card border="primary" style={{ width: '18rem' }}>
             <Card.Img src={this.props.image_url} alt={this.props.title} title={this.props.title} />
             <Card.Body>
-              <Card.Title>{this.props.title}</Card.Title>
+              <Card.Title onClick={this.helpHandleOnShow}>{this.props.title}</Card.Title>
               <Card.Text>{this.props.description}</Card.Text>
               <Button variant="" onClick={this.handleLikes}>{this.state.likes} Likes!  💟</Button>
           </Card.Body>

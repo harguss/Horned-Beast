@@ -2,11 +2,11 @@ import React from 'react';
 import Header from './Header.js';
 import Main from './Main';
 import './App.css';
-import Footer from './Footer';
+// import Footer from './Footer';
 import Container from 'react-bootstrap/Container';
 import data from './data.json';
-// import SelectedBeast from './SelectBeast'
-import Modal from 'react-bootstrap/Modal';
+import './SelectBeast'
+// import Modal from 'react-bootstrap/Modal';
 // import Button from 'react-bootstrap/Button';
 
 class App extends React.Component {
@@ -14,31 +14,28 @@ class App extends React.Component {
      super(props);
      this.state ={
        showModal:false,
-       selectBeast: '',
+       selectHornedBeast: '',
 
     }
   }
   // helper functions
-handleOnShow = () => {
+handleOnShow = (hornedBeast) => {
   this.setState({
     showModal:true,
+    selectBeast: hornedBeast
   });
 }
   render() {
     return (
       <>
       <Container >
-        <p onClick={this.handleOnShow}>SHow me now est modal</p>
+        {/* <p onClick={this.handleOnShow}>SHow me now est modal</p> */}
         <Header />
         <Main
-         data ={data}/>
+         data ={data}
+         handleOnShow={this.handleOnShow}/>
         <footer>Susan Hargus</footer>
         {/* <SelectedBeast /> */}
-        <Modal show={this.state.showModal} onHide={this.handleClose}>
-        {/* <Modal.Header closeButton>
-          <Modal.Title>{this.state.selectBeast}</Modal.Title>
-        </Modal.Header> */}
-      </Modal>
       </Container>
       </>
     );

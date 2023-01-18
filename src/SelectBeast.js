@@ -1,18 +1,25 @@
-// import React from 'react';
+import React from 'react';
+import Modal from 'react-bootstrap/Modal';
 
 
 
 
 
-// class SelectBeast extends React.Component {
+class SelectBeast extends React.Component {
 
-//   render() {
-//     return (
-//       this.props
-//       // update this.props...
-// );
-//   }
+  render() {
+    return (
+      <>
+       <Modal show={this.state.showModal} onHide={this.handleClose}>
+       <Modal.Header closeButton>
+         <Modal.Title>{this.state.selectBeast}</Modal.Title>
+       </Modal.Header>
+      <Modal.Body></Modal.Body>
+     </Modal>
+     </>
+);
+  }
 
-// }
+}
 
-// export default SelectBeast;
+export default SelectBeast;
