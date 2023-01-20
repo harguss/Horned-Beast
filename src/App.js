@@ -8,12 +8,65 @@ import data from './data.json';
 import './SelectBeast'
 import Modal from 'react-bootstrap/Modal';
 import Image from 'react-bootstrap/Image'
-// import Button from 'react-bootstrap/Button';
+import { Form } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 class App extends React.Component {
-  constructor(props){
+  // this is from demo
+// constructor(props) {
+//   super(props);
+//   this.state = {
+//     userName: "",
+//     howToSort: "",
+//     sortedData: data,
+//   }
+// }
+
+
+
+//   handleSubmit = (event) => {
+//   event.preventDefault();
+//   let userName = event.target.userName.value;
+//   console.log(userName);
+//   this.setState({
+//   userName: userName,
+//   });
+//   console.log('user in state?', this.state.userName);
+//   };
+
+//   handleInput = (event) => {
+//     let userName = event.target.value;
+//     console.log("userName", userName);
+//     this.setState({
+//       userName: userName,
+//     });
+//     }
+//   handleSelect = (event) => {
+//     let selected = event.target.value;
+//     console.log("selected", selected);
+
+// if (selected === 'one'){
+//   let newData = data.filter((value) => value === 1);
+//   this.set.State({sortedData: newData});
+
+// } else if (selected === 'two'){
+//   let newData = data.filter((value) => value  === 2);
+//   this.set.State({sortedData: newData})
+
+// } else if (selected === 'three'){
+//     let newData = data.filter((value) => value  === 3);
+//     this.set.State({sortedData: newData})
+
+// } else (selected === 'all'){
+//   this.set.State({sortedData: data})
+
+// }
+
+//     }
+//   }
+ constructor(props){
      super(props);
-     this.state ={
+     this.state = {
        showModal: false,
        selectHornedBeast: {
         title: '',
@@ -43,10 +96,11 @@ handleClose = () => {
     return (
       <>
       <Container >
-        {/* <p onClick={this.handleOnShow}>SHow me now esta modal</p> */}
+
         <Header />
         <Main
-         data ={data}
+        //  data ={this.state.sortedData}
+         data = {data}
          handleOnShow={this.handleOnShow}/>
         <footer>Susan Hargus</footer>
         {/* <SelectedBeast /> */}
@@ -60,6 +114,23 @@ handleClose = () => {
           <Image src={this.state.selectHornedBeast.image}/>
         </Modal.Body>
       </Modal>
+{/* ////////////////////////////////////////////// */}
+      <Form onSubmit={this.handleSubmit}>
+        <Form.Label>
+          {/* <input type="text" name="userName" onInput={this.handleInput}/> */}
+          
+            <legend>Gallery of Horns</legend>
+            <Form.Select name="selected" onChange={this.handleSelect}>
+            <option value="all">All</option>
+            <option value="one">One Horn</option>
+            <option value="two">Two Horns</option>
+            <option value="three">Three Horns</option>
+            </Form.Select>
+          
+          
+          <Button type='submit'>submit</Button>
+        </Form.Label>
+      </Form>
       </>
     );
   }
