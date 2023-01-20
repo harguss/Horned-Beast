@@ -2,14 +2,15 @@ import React from "react";
 import Header from "./Header.js";
 import Main from "./Main";
 import "./App.css";
-// import Footer from './Footer';
+import Footer from './Footer';
 import Container from "react-bootstrap/Container";
 import data from "./data.json";
 import "./SelectBeast";
 import Modal from "react-bootstrap/Modal";
 import Image from "react-bootstrap/Image";
 import { Form } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -72,16 +73,16 @@ class App extends React.Component {
           <Header />
           <Form onSubmit={this.handleSubmit}>
           <Form.Label>
-            <legend>Gallery of Horns</legend>
+          {/* <Button type="submit">Gallery of Horns</Button> */}
             <Form.Select name="selected" onChange={this.handleSelect}>
-              <option value="all">All</option>
+              <option value="all">Gallery of Horns</option>
               <option value="1">One Horn</option>
               <option value="2">Two Horns</option>
               <option value="3">Three Horns</option>
               <option value="100">100 Horns</option>
             </Form.Select>
 
-            <Button type="submit">reset</Button>
+            
           </Form.Label>
         </Form>
           <Main
@@ -89,7 +90,7 @@ class App extends React.Component {
             // data={data}
             handleOnShow={this.handleOnShow}
           />
-          <footer>Susan Hargus</footer>
+          
           {/* <SelectedBeast /> */}
         </Container>
         <Modal show={this.state.showModal} onHide={this.handleClose}>
@@ -102,7 +103,7 @@ class App extends React.Component {
           </Modal.Body>
         </Modal>
 
-        
+       <Footer />
       </>
     );
   }
