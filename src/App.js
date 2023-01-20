@@ -35,16 +35,16 @@ class App extends React.Component {
       // console.log("🚀 ~ file: App.js:35 ~ App ~ newData", newData);
       
       this.setState({ sortedData: newData });
-    } 
-    //else if (selected === "two") {
+    // } 
+     //else if (selected === "two") {
     //   let newData = data.filter((value) => value === 2);
     //   this.set.State({ sortedData: newData });
     // } else if (selected === "three") {
     //   let newData = data.filter((value) => value === 3);
     //   this.set.State({ sortedData: newData });
-    // } else {
-    //   this.set.State({ sortedData: data });
-    // }
+    } else {
+      this.setState({ sortedData: data });
+    }
   };
 
   // helper functions
