@@ -27,14 +27,14 @@ class App extends React.Component {
 
   handleSelect = (event) => {
     let selected = parseInt(event.target.value);
-    console.log("🚀 ~ file: App.js:30 ~ App ~ selected", selected);
+    // console.log("🚀 ~ file: App.js:30 ~ App ~ selected", selected);
     // console.log("selected", selected);
 
     if (selected === 1) {
       let newData = data.filter((beastObject) => beastObject.horns === 1);
-      console.log("🚀 ~ file: App.js:35 ~ App ~ newData", newData);
+      // console.log("🚀 ~ file: App.js:35 ~ App ~ newData", newData);
       
-      // this.set.State({ sortedData: newData });
+      this.setState({ sortedData: newData });
     } 
     //else if (selected === "two") {
     //   let newData = data.filter((value) => value === 2);
@@ -68,8 +68,8 @@ class App extends React.Component {
         <Container>
           <Header />
           <Main
-            //  data ={this.state.sortedData}
-            data={data}
+            sortedData = {this.state.sortedData}
+            // data={data}
             handleOnShow={this.handleOnShow}
           />
           <footer>Susan Hargus</footer>
