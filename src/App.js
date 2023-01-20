@@ -33,15 +33,18 @@ class App extends React.Component {
     if (selected === 1) {
       let newData = data.filter((beastObject) => beastObject.horns === 1);
       // console.log("🚀 ~ file: App.js:35 ~ App ~ newData", newData);
-      
       this.setState({ sortedData: newData });
-    // } 
-     //else if (selected === "two") {
-    //   let newData = data.filter((value) => value === 2);
-    //   this.set.State({ sortedData: newData });
-    // } else if (selected === "three") {
-    //   let newData = data.filter((value) => value === 3);
-    //   this.set.State({ sortedData: newData });
+     } 
+      else if (selected === 2) {
+      let newData = data.filter((beastObject) => beastObject.horns === 2);
+       this.setState({ sortedData: newData });
+       console.log()
+     } else if (selected === 3) {
+      let newData = data.filter((beastObject) => beastObject.horns === 3);
+      this.setState({ sortedData: newData });
+    } else if (selected === 100) {
+      let newData = data.filter((beastObject) => beastObject.horns === 100);
+      this.setState({ sortedData: newData });
     } else {
       this.setState({ sortedData: data });
     }
@@ -67,6 +70,20 @@ class App extends React.Component {
       <>
         <Container>
           <Header />
+          <Form onSubmit={this.handleSubmit}>
+          <Form.Label>
+            <legend>Gallery of Horns</legend>
+            <Form.Select name="selected" onChange={this.handleSelect}>
+              <option value="all">All</option>
+              <option value="1">One Horn</option>
+              <option value="2">Two Horns</option>
+              <option value="3">Three Horns</option>
+              <option value="100">100 Horns</option>
+            </Form.Select>
+
+            <Button type="submit">reset</Button>
+          </Form.Label>
+        </Form>
           <Main
             sortedData = {this.state.sortedData}
             // data={data}
@@ -85,20 +102,7 @@ class App extends React.Component {
           </Modal.Body>
         </Modal>
 
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Label>
-            <legend>Gallery of Horns</legend>
-            <Form.Select name="selected" onChange={this.handleSelect}>
-              <option value="all">All</option>
-              <option value="1">One Horn</option>
-              <option value="2">Two Horns</option>
-              <option value="3">Three Horns</option>
-              <option value="100">100 Horns</option>
-            </Form.Select>
-
-            <Button type="submit">submit</Button>
-          </Form.Label>
-        </Form>
+        
       </>
     );
   }
