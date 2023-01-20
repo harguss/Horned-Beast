@@ -12,7 +12,7 @@ class Main extends React.Component {
   }
 
   render() {
-    // console.log('data? :', data);
+    console.log('sorted- data: ', this.props.sortedData);
 
    
     
@@ -21,7 +21,7 @@ class Main extends React.Component {
       <>
      
      <Row xs={2} sm={3} md={4} lg={5}>
-        {this.props.data.map((newHornedbeast, index) => (
+        {this.props.sortedData.map((newHornedbeast, index) => (
             <HornedBeast
               title={newHornedbeast.title}
               image_url={newHornedbeast.image_url}
