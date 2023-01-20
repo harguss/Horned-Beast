@@ -117,14 +117,13 @@ handleClose = () => {
 {/* ////////////////////////////////////////////// */}
       <Form onSubmit={this.handleSubmit}>
         <Form.Label>
-          {/* <input type="text" name="userName" onInput={this.handleInput}/> */}
-          
             <legend>Gallery of Horns</legend>
             <Form.Select name="selected" onChange={this.handleSelect}>
             <option value="all">All</option>
             <option value="one">One Horn</option>
             <option value="two">Two Horns</option>
             <option value="three">Three Horns</option>
+            <option value="100">100 Horns</option>
             </Form.Select>
           
           
